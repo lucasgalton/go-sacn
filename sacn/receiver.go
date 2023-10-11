@@ -43,7 +43,7 @@ to use multicast for receiving, just provide "nil".
 func NewReceiverSocket(bind string, ifi *net.Interface) (*ReceiverSocket, error) {
 	r := &ReceiverSocket{}
 
-	ServerConn, err := net.ListenPacket("udp4", bind+":5568")
+	ServerConn, err := net.ListenPacket("udp4", bind)
 	if err != nil {
 		return r, err
 	}
