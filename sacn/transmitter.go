@@ -154,7 +154,7 @@ func (t *Transmitter) SetDestinations(universe uint16, destinations []string) []
 		if dest == "" {
 			continue // continue if the string is empty
 		}
-		addr, err := net.ResolveUDPAddr("udp", dest+":5568")
+		addr, err := net.ResolveUDPAddr("udp", dest)
 		if err != nil {
 			errs = append(errs, err)
 			continue
