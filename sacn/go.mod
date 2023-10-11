@@ -1,4 +1,4 @@
-module github.com/lucasgalton/go-sacn/sacn
+module github.com/lucasgalton/go-sacn2/sacn
 
 go 1.12
 
